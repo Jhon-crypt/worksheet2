@@ -1,5 +1,6 @@
 #include "task1.hpp"
 #include <iostream>
+#include <cstring>
 #include <string>
 
 // Test different allocation sizes
