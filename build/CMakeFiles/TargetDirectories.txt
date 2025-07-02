@@ -1,4 +1,5 @@
 /Users/john/projects/worksheet2/build/CMakeFiles/task1_test.dir
+/Users/john/projects/worksheet2/build/CMakeFiles/task2.dir
 /Users/john/projects/worksheet2/build/CMakeFiles/task3.dir
 /Users/john/projects/worksheet2/build/CMakeFiles/edit_cache.dir
 /Users/john/projects/worksheet2/build/CMakeFiles/rebuild_cache.dir

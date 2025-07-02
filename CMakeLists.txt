@@ -8,6 +8,13 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_executable(task1_test task1_test.cpp)
 target_include_directories(task1_test PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 
+# Task 2 - Test suite
+add_executable(task2 task2.cpp)
+target_include_directories(task2 PRIVATE 
+    ${CMAKE_CURRENT_SOURCE_DIR}
+    ${CMAKE_CURRENT_SOURCE_DIR}/simpletest
+)
+
 # Task 3 - Benchmarking
 add_executable(task3 task3.cpp)
 target_include_directories(task3 PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}) 

@@ -64,11 +64,13 @@ CMAKE_BINARY_DIR = /Users/john/projects/worksheet2/build
 
 # The main recursive "all" target.
 all: CMakeFiles/task1_test.dir/all
+all: CMakeFiles/task2.dir/all
 all: CMakeFiles/task3.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/task1_test.dir/codegen
+codegen: CMakeFiles/task2.dir/codegen
 codegen: CMakeFiles/task3.dir/codegen
 .PHONY : codegen
 
@@ -78,6 +80,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/task1_test.dir/clean
+clean: CMakeFiles/task2.dir/clean
 clean: CMakeFiles/task3.dir/clean
 .PHONY : clean
 
@@ -113,13 +116,44 @@ CMakeFiles/task1_test.dir/clean:
 .PHONY : CMakeFiles/task1_test.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/task2.dir
+
+# All Build rule for target.
+CMakeFiles/task2.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.dir/build.make CMakeFiles/task2.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.dir/build.make CMakeFiles/task2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/john/projects/worksheet2/build/CMakeFiles --progress-num=3,4 "Built target task2"
+.PHONY : CMakeFiles/task2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/task2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/john/projects/worksheet2/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/task2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/john/projects/worksheet2/build/CMakeFiles 0
+.PHONY : CMakeFiles/task2.dir/rule
+
+# Convenience name for target.
+task2: CMakeFiles/task2.dir/rule
+.PHONY : task2
+
+# codegen rule for target.
+CMakeFiles/task2.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.dir/build.make CMakeFiles/task2.dir/codegen
+.PHONY : CMakeFiles/task2.dir/codegen
+
+# clean rule for target.
+CMakeFiles/task2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/task2.dir/build.make CMakeFiles/task2.dir/clean
+.PHONY : CMakeFiles/task2.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/task3.dir
 
 # All Build rule for target.
 CMakeFiles/task3.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.dir/build.make CMakeFiles/task3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/task3.dir/build.make CMakeFiles/task3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/john/projects/worksheet2/build/CMakeFiles --progress-num=3,4 "Built target task3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/john/projects/worksheet2/build/CMakeFiles --progress-num=5,6 "Built target task3"
 .PHONY : CMakeFiles/task3.dir/all
 
 # Build rule for subdir invocation for target.
